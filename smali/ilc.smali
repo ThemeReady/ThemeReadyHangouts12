@@ -1,0 +1,49 @@
+.class final Lilc;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field final synthetic a:Lilb;
+
+
+# direct methods
+.method constructor <init>(Lilb;)V
+    .locals 0
+
+    .prologue
+    .line 219
+    iput-object p1, p0, Lilc;->a:Lilb;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 3
+
+    .prologue
+    .line 222
+    const-string v0, "vclib"
+
+    const-string v1, "Call termination timed out"
+
+    .line 1101
+    const/4 v2, 0x6
+
+    invoke-static {v2, v0, v1}, Liuy;->a(ILjava/lang/String;Ljava/lang/String;)V
+
+    .line 224
+    const-string v0, "Call termination timed out"
+
+    invoke-static {v0}, Lcom/google/android/libraries/hangouts/video/internal/Libjingle;->nativeAbort(Ljava/lang/String;)V
+
+    .line 225
+    return-void
+.end method

@@ -1,0 +1,231 @@
+.class public final Lgbp;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/lang/Runnable;
+
+
+# instance fields
+.field final synthetic a:Lcom/google/android/apps/hangouts/views/OverlayedAvatarView;
+
+.field final synthetic b:Ldpf;
+
+.field final synthetic c:Lgbq;
+
+.field final synthetic d:I
+
+.field final synthetic e:I
+
+.field final synthetic f:Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;Lcom/google/android/apps/hangouts/views/OverlayedAvatarView;Ldpf;Lgbq;II)V
+    .locals 0
+
+    .prologue
+    .line 723
+    iput-object p1, p0, Lgbp;->f:Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;
+
+    iput-object p2, p0, Lgbp;->a:Lcom/google/android/apps/hangouts/views/OverlayedAvatarView;
+
+    iput-object p3, p0, Lgbp;->b:Ldpf;
+
+    iput-object p4, p0, Lgbp;->c:Lgbq;
+
+    iput p5, p0, Lgbp;->d:I
+
+    iput p6, p0, Lgbp;->e:I
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public run()V
+    .locals 7
+
+    .prologue
+    .line 728
+    iget-object v0, p0, Lgbp;->a:Lcom/google/android/apps/hangouts/views/OverlayedAvatarView;
+
+    invoke-virtual {v0}, Lcom/google/android/apps/hangouts/views/OverlayedAvatarView;->c()I
+
+    move-result v3
+
+    .line 729
+    iget-object v0, p0, Lgbp;->a:Lcom/google/android/apps/hangouts/views/OverlayedAvatarView;
+
+    const/4 v1, 0x0
+
+    invoke-virtual {v0, v1}, Lcom/google/android/apps/hangouts/views/OverlayedAvatarView;->f(I)V
+
+    .line 730
+    if-eqz v3, :cond_1
+
+    .line 732
+    iget-object v0, p0, Lgbp;->a:Lcom/google/android/apps/hangouts/views/OverlayedAvatarView;
+
+    invoke-virtual {v0, v3}, Lcom/google/android/apps/hangouts/views/OverlayedAvatarView;->e(I)V
+
+    .line 737
+    iget-object v0, p0, Lgbp;->f:Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;
+
+    iget-object v1, p0, Lgbp;->a:Lcom/google/android/apps/hangouts/views/OverlayedAvatarView;
+
+    iget-object v2, p0, Lgbp;->f:Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;
+
+    .line 1042
+    invoke-virtual {v2, v3}, Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;->b(I)I
+
+    move-result v2
+
+    .line 739
+    iget-object v4, p0, Lgbp;->b:Ldpf;
+
+    iget-object v4, v4, Ldpf;->e:Ljava/lang/String;
+
+    iget-object v5, p0, Lgbp;->b:Ldpf;
+
+    iget-object v5, v5, Ldpf;->h:Ljava/lang/String;
+
+    .line 2042
+    invoke-virtual/range {v0 .. v5}, Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;->a(Lcom/google/android/apps/hangouts/views/OverlayedAvatarView;IILjava/lang/String;Ljava/lang/String;)V
+
+    .line 750
+    :goto_0
+    iget-object v0, p0, Lgbp;->f:Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;
+
+    iget-object v1, p0, Lgbp;->b:Ldpf;
+
+    .line 6042
+    invoke-virtual {v0, v1}, Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;->e(Ldpf;)V
+
+    .line 751
+    iget-object v0, p0, Lgbp;->c:Lgbq;
+
+    const/4 v1, 0x1
+
+    invoke-virtual {v0, v1}, Lgbq;->a(Z)V
+
+    .line 7042
+    sget-boolean v0, Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;->a:Z
+
+    .line 752
+    if-eqz v0, :cond_0
+
+    .line 753
+    iget-object v0, p0, Lgbp;->f:Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;
+
+    iget-object v1, p0, Lgbp;->a:Lcom/google/android/apps/hangouts/views/OverlayedAvatarView;
+
+    iget v2, p0, Lgbp;->d:I
+
+    iget v4, p0, Lgbp;->e:I
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    const/16 v6, 0x39
+
+    invoke-direct {v5, v6}, Ljava/lang/StringBuilder;-><init>(I)V
+
+    const-string v6, "Move (end) "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v5
+
+    invoke-virtual {v5, v2}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v5, " -> "
+
+    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v4, "(actual "
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    const-string v3, ")"
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    .line 8042
+    const/4 v3, 0x0
+
+    invoke-virtual {v0, v3, v1, v2}, Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;->a(Ljava/lang/Throwable;Lcom/google/android/apps/hangouts/views/OverlayedAvatarView;Ljava/lang/String;)V
+
+    .line 758
+    :cond_0
+    return-void
+
+    .line 745
+    :cond_1
+    iget-object v0, p0, Lgbp;->f:Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;
+
+    .line 3042
+    iget-object v1, v0, Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;->e:Lfvx;
+
+    .line 745
+    monitor-enter v1
+
+    .line 746
+    :try_start_0
+    iget-object v0, p0, Lgbp;->f:Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;
+
+    .line 4042
+    iget-object v0, v0, Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;->e:Lfvx;
+
+    .line 746
+    iget-object v2, p0, Lgbp;->b:Ldpf;
+
+    iget-object v2, v2, Ldpf;->b:Ldpj;
+
+    invoke-virtual {v0, v2}, Lfvx;->remove(Ljava/lang/Object;)Ljava/lang/Object;
+
+    .line 747
+    monitor-exit v1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    .line 748
+    iget-object v0, p0, Lgbp;->f:Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;
+
+    .line 5042
+    invoke-virtual {v0}, Lcom/google/android/apps/hangouts/views/ParticipantsGalleryView;->a()V
+
+    goto :goto_0
+
+    .line 747
+    :catchall_0
+    move-exception v0
+
+    :try_start_1
+    monitor-exit v1
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
+
+    throw v0
+.end method

@@ -1,0 +1,146 @@
+.class public final Lgkx;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field public static a:Lhen;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lhen",
+            "<",
+            "Ljava/lang/Integer;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static b:Lhen;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lhen",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static c:Lhen;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lhen",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static d:Lhen;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lhen",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static e:Lhen;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lhen",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field public static f:Lhen;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Lhen",
+            "<",
+            "Ljava/lang/Long;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 4
+
+    const-string v0, "gms:common:stats:connections:level"
+
+    sget v1, Lgkz;->b:I
+
+    invoke-static {v1}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lhen;->a(Ljava/lang/String;Ljava/lang/Integer;)Lhen;
+
+    move-result-object v0
+
+    sput-object v0, Lgkx;->a:Lhen;
+
+    const-string v0, "gms:common:stats:connections:ignored_calling_processes"
+
+    const-string v1, ""
+
+    invoke-static {v0, v1}, Lhen;->a(Ljava/lang/String;Ljava/lang/String;)Lhen;
+
+    move-result-object v0
+
+    sput-object v0, Lgkx;->b:Lhen;
+
+    const-string v0, "gms:common:stats:connections:ignored_calling_services"
+
+    const-string v1, ""
+
+    invoke-static {v0, v1}, Lhen;->a(Ljava/lang/String;Ljava/lang/String;)Lhen;
+
+    move-result-object v0
+
+    sput-object v0, Lgkx;->c:Lhen;
+
+    const-string v0, "gms:common:stats:connections:ignored_target_processes"
+
+    const-string v1, ""
+
+    invoke-static {v0, v1}, Lhen;->a(Ljava/lang/String;Ljava/lang/String;)Lhen;
+
+    move-result-object v0
+
+    sput-object v0, Lgkx;->d:Lhen;
+
+    const-string v0, "gms:common:stats:connections:ignored_target_services"
+
+    const-string v1, "com.google.android.gms.auth.GetToken"
+
+    invoke-static {v0, v1}, Lhen;->a(Ljava/lang/String;Ljava/lang/String;)Lhen;
+
+    move-result-object v0
+
+    sput-object v0, Lgkx;->e:Lhen;
+
+    const-string v0, "gms:common:stats:connections:time_out_duration"
+
+    const-wide/32 v2, 0x927c0
+
+    invoke-static {v2, v3}, Ljava/lang/Long;->valueOf(J)Ljava/lang/Long;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Lhen;->a(Ljava/lang/String;Ljava/lang/Long;)Lhen;
+
+    move-result-object v0
+
+    sput-object v0, Lgkx;->f:Lhen;
+
+    return-void
+.end method
