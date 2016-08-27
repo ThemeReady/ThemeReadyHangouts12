@@ -569,7 +569,7 @@
 
 .field public static final et:I = 0x7f0e00a8
 
-.field public static final eu:I = 0x7f0e0099
+.field public static final eu:I = 0x7f0e009f # @color/bg_item_selected
 
 .field public static final ev:I = 0x7f0e0295
 
@@ -577,7 +577,7 @@
 
 .field public static final ex:I = 0x7f0e0296
 
-.field public static final ey:I = 0x7f0e0240
+.field public static final ey:I = 0x7f0e0213 # @color/button_material_light
 
 .field public static final ez:I = 0x7f0e02b4
 
@@ -1225,7 +1225,7 @@
 
 .field public static final lH:I = 0x7f04009d
 
-.field public static final lI:I = 0x7f0e00c0
+.field public static final lI:I = 0x7f0e007c # @color/default_bg
 
 .field public static final lJ:I = 0x7f0b0069
 

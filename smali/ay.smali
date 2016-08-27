@@ -2130,7 +2130,7 @@
 
 .field public static final tW:I = 0x7f0e0094
 
-.field public static final tX:I = 0x7f0e0110
+.field public static final tX:I = 0x7f0e00a4 # @color/incoming_conversation_bubble_background
 
 .field public static final tY:I = 0x7f0d02c2
 
